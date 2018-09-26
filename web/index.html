@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flag Forensics</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Flag Forensics</a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <!-- <li><a href="temp.html">Max Temperature</a></li>
+                    <li><a href="humid.html">Humidity</a></li>
+                    <li><a href="cloud.html">Cloudiness</a></li>
+                    <li><a href="wind.html">Wind Speed</a></li> -->
+                  </ul>
+                </li>
+                <li><a href="comparison.html">Info</a></li>
+                <li><a href="data.html">Data</a></li>
+            </ul>
+          </div>
+    </div>
+  </nav>
+  <div class="container-fluid summary-cont">
+    <div class="row">
+        <div class="col-sm-12">
+          <div class="box">
+            <h1>Import Flag Image</h1>
+            <hr>
+            <div class="row">
+              <div class="col-sm-6">
+                  <img src="#"  class="flag" alt="Flag">
+              </div>
+              <div class="col-md-6">
+                <h4>
+                  Upload an image of a flag to get the country it is associated with.
+                </h4>
+                <br>
+                <div class="col-md-6">
+                    <form action="classify" method="post" enctype="multipart/form-data">
+                        <input type="file" name="file">
+                    </form>
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" name="submit" style="border-radius: 5px">Upload Image</button>
+                </div>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!-- <div class="container-fluid viz-cont">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="box">
+              <h1>Visualizations</h1>
+              <hr>
+              <div class="row">
+                <div class="col-sm-6">
+                  <a href="temp.html"> 
+                    <img src="Resources/assets/images/Fig1.png"  class="tempviz" alt="Temperature v Lat">
+                  </a>
+                </div>
+                <div class="col-sm-6">
+                    <a href="humid.html"> 
+                    <img src="Resources/assets/images/Fig2.png"  class="humidviz" alt="Humidity v Lat">
+                    </a>
+                </div>
+  
+              </div>
+              <div class="row">
+                  <div class="col-sm-6">
+                      <a href="cloud.html"> 
+                      <img src="Resources/assets/images/Fig3.png"  class="cloudviz" alt="Cloudiness v Lat">
+                      </a>
+                  </div>
+                  <div class="col-sm-6">
+                      <a href="wind.html"> 
+                      <img src="Resources/assets/images/Fig4.png"  class="windviz" alt="Wind Speed v Lat">
+                      </a>
+                  </div>
+    
+                </div>
+  
+            </div>
+        </div>
+    </div>
+  </div> -->
+</body>
+
+</html>
