@@ -14,21 +14,12 @@
     <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
             <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">Flag Forensics</a>
+                <a class="navbar-brand" href="home.html">Flag Forensics</a>
             </div>
 
             <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <!-- <li><a href="temp.html">Max Temperature</a></li>
-                    <li><a href="humid.html">Humidity</a></li>
-                    <li><a href="cloud.html">Cloudiness</a></li>
-                    <li><a href="wind.html">Wind Speed</a></li> -->
-                  </ul>
-                </li>
-                <li><a href="comparison.html">Info</a></li>
-                <li><a href="data.html">Data</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="import.html">Import</a></li>
             </ul>
           </div>
     </div>
@@ -48,6 +39,17 @@
                   Upload an image of a flag to get the country it is associated with.
                 </h4>
                 <br>
+                <!-- <div class="col-md-6">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                    </div>
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                      <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                    </div>
+                  </div>
+                </div> -->
                 <div class="col-md-6">
                     <form action="classify" method="post" enctype="multipart/form-data">
                         <input type="file" name="file">
